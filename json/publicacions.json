@@ -1,0 +1,41 @@
+[
+    {
+    "_id": "1",
+    "text": "Aquest producte és increïble! #Innovacio",
+    "hashtags": ["#Innovacio"],
+    "mencions": ["@marca1"],
+    "paraules_clau": ["producte", "qualitat"],
+    "data_hora": "2024-01-30T12:00:00Z",
+    "likes": 150,
+    "retuits": 30,
+    "ubicacio": "Barcelona, Espanya",
+    "sentiment": "positiu",
+    "usuari_id": "101"
+  },
+  {
+    "_id": "2",
+    "text": "No m'ha agradat gaire aquest servei. #Decepcio",
+    "hashtags": ["#Decepcio"],
+    "mencions": ["@marca2"],
+    "paraules_clau": ["servei", "atencio"],
+    "data_hora": "2024-01-29T14:45:00Z",
+    "likes": 50,
+    "retuits": 10,
+    "ubicacio": "Madrid, Espanya",
+    "sentiment": "negatiu",
+    "usuari_id": "102"
+  },
+  {
+    "_id": "3",
+    "text": "M'encanta la nova versió! Més ràpida i eficient! #Tech",
+    "hashtags": ["#Tech"],
+    "mencions": ["@marca3"],
+    "paraules_clau": ["nova versió", "eficiència"],
+    "data_hora": "2024-01-28T09:30:00Z",
+    "likes": 200,
+    "retuits": 40,
+    "ubicacio": "València, Espanya",
+    "sentiment": "positiu",
+    "usuari_id": "103"
+  }
+]

@@ -1,0 +1,20 @@
+[
+    {
+      "_id": "201",
+      "paraula_clau": "#Innovacio",
+      "mencions_count": 120,
+      "data_hora": "2024-01-30T12:00:00Z"
+    },
+    {
+      "_id": "202",
+      "paraula_clau": "#Decepcio",
+      "mencions_count": 90,
+      "data_hora": "2024-01-29T14:45:00Z"
+    },
+    {
+      "_id": "203",
+      "paraula_clau": "#Tech",
+      "mencions_count": 150,
+      "data_hora": "2024-01-28T09:30:00Z"
+    }
+  ]

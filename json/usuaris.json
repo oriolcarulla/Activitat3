@@ -1,0 +1,20 @@
+[
+    {
+      "_id": "101",
+      "nom_usuari": "usuari_feliç",
+      "seguidors": 1200,
+      "verificat": false
+    },
+    {
+      "_id": "102",
+      "nom_usuari": "crític_digital",
+      "seguidors": 850,
+      "verificat": true
+    },
+    {
+      "_id": "103",
+      "nom_usuari": "tech_lover",
+      "seguidors": 3000,
+      "verificat": true
+    }
+  ]
