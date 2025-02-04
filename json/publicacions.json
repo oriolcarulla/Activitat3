@@ -2,7 +2,7 @@
     {
     "_id": "1",
     "text": "Aquest producte és increïble! #Innovacio",
-    "hashtags": ["#Innovacio"],
+    "hastags": ["#Innovacio"],
     "mencions": ["@marca1"],
     "paraules_clau": ["producte", "qualitat"],
     "data_hora": "2024-01-30T12:00:00Z",
@@ -15,7 +15,7 @@
   {
     "_id": "2",
     "text": "No m'ha agradat gaire aquest servei. #Decepcio",
-    "hashtags": ["#Decepcio"],
+    "hastags": ["#Decepcio"],
     "mencions": ["@marca2"],
     "paraules_clau": ["servei", "atencio"],
     "data_hora": "2024-01-29T14:45:00Z",
@@ -28,7 +28,7 @@
   {
     "_id": "3",
     "text": "M'encanta la nova versió! Més ràpida i eficient! #Tech",
-    "hashtags": ["#Tech"],
+    "hastags": ["#Tech"],
     "mencions": ["@marca3"],
     "paraules_clau": ["nova versió", "eficiència"],
     "data_hora": "2024-01-28T09:30:00Z",
