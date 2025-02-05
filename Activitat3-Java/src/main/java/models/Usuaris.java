@@ -3,6 +3,7 @@ package models;
 import org.bson.Document;
 
 public class Usuaris {
+    private String _id;
     private String nom_usuari;
     private int seguidors;
     private boolean verificat;

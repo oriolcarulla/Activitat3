@@ -1,6 +1,9 @@
 import DAO.*;
 import com.mongodb.client.MongoDatabase;
+import models.Publicacions;
 import view.View;
+
+import java.util.List;
 import java.util.Scanner;
 
 public class Controller {
@@ -15,7 +18,10 @@ public class Controller {
             int option = checkInputInt(input, 1, 3, ">");
             switch (option){
                 case 1:
-                    System.out.println("Visualitzar Publicacions");
+                    List<Publicacions> publicacions = publicacionsDAO.obtenirTots();
+                    for (Publicacions p : publicacions){
+                        view.showPublicacio(p);
+                    }
                     break;
                 case 2:
                     System.out.println("Afegir Publicacio");
@@ -27,7 +33,6 @@ public class Controller {
         }
 
     }
-
     public static int checkInputInt(Scanner input, int min, int max, String prompt){
         int option = 0;
         boolean valid = false;

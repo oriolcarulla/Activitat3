@@ -16,6 +16,7 @@ public class Publicacions {
     private String ubicacio;
     private String sentiment;
     private String usuari_id;
+    private Usuaris usuari;
 
     public Publicacions (String _id, String text, List<String> hastags, List<String> mencions, List<String> paraules_clau, String data_hora, int likes, int retuits, String ubicacio, String sentiment, String usuari_id){
         this._id = _id;
@@ -65,6 +66,9 @@ public class Publicacions {
     public String getUsuari_id() {
         return usuari_id;
     }
+    public Usuaris getUsuari() {
+        return usuari;
+    }
 
     public void set_Id(String _id) {
         this._id = _id;
@@ -100,6 +104,10 @@ public class Publicacions {
         this.usuari_id = usuari_id;
     }
 
+    public void setUsuari(Usuaris usuari) {
+        this.usuari = usuari;
+    }
+
     public Document toDocument(){
         Document document = new Document();
         document.append("_id", _id)
@@ -118,6 +126,6 @@ public class Publicacions {
 
     @Override
     public String toString() {
-        return "_id=" + _id + ", text=" + text + ", hastags=" + hastags + ", mencions=" + mencions + ", paraules_clau=" + paraules_clau + ", data_hora=" + data_hora + ", likes=" + likes + ", retuits=" + retuits + ", ubicacio=" + ubicacio + ", sentiment=" + sentiment + ", usuari_id=" + usuari_id;
+        return "_id=" + _id + ", text=" + text + ", hastags=" + hastags + ", mencions=" + mencions + ", paraules_clau=" + paraules_clau + ", data_hora=" + data_hora + ", likes=" + likes + ", retuits=" + retuits + ", ubicacio=" + ubicacio + ", sentiment=" + sentiment + ", usuari_id=" + usuari_id + ", usuari=" + usuari;
     }
 }
