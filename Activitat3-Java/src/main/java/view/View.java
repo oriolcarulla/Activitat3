@@ -39,4 +39,39 @@ public class View {
         Usuaris u = p.getUsuari();
         System.out.println("Usuari: " + u.getNom_usuari());
     }
+
+    public void showMenuAddPublicacio() {
+        System.out.println(separador);
+        System.out.println("Afegir Publicacio");
+        System.out.println(separador);
+    }
+
+    public void inputText() {
+        System.out.println("Text: ");
+    }
+
+    public void inputHastags() {
+        System.out.println("Hastag (exit): ");
+    }
+
+    public void inputMencions() {
+        System.out.println("Mencio (exit): ");
+    }
+
+    public void succesAddPublicacio() {
+        System.out.println("Publicacio afegida correctament");
+    }
+
+    public void failAddPublicacio() {
+        System.out.println("Error al afegir la publicacio");
+    }
+
+    public void filterDates() {
+        System.out.println("Filtrar per dates (yyyy-MM-ddTHH:mm:ss): ");
+        System.out.println("Desde: ");
+    }
+
+    public void filterDates2() {
+        System.out.println("Fins: ");
+    }
 }

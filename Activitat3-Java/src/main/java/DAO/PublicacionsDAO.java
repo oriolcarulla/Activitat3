@@ -29,6 +29,34 @@ public class PublicacionsDAO {
         return publicaciones;
     }
 
+    public boolean addPublicacio(Publicacions p){
+        Document doc = p.toDocument();
+        collection.insertOne(doc);
+        return true;
+    }
+
+    public String getLastId(){
+        Document doc = collection.find().sort(new Document("_id", -1)).first();
+        String idStr =  doc.getString("_id");
+        int id = Integer.parseInt(idStr);
+        id++;
+        return Integer.toString(id);
+    }
+
+    public List<Publicacions> filtrarData(String desde, String hasta){
+        //formato de las dates: 2024-01-30T12:00:00Z
+        List<Publicacions> publicaciones = new ArrayList<>();
+        for (Document doc : collection.find(new Document("data_hora", new Document("$gte", desde).append("$lte", hasta)))){
+            Publicacions p = fromDocument(doc);
+            Document doc_user = collectionUsuaris.find(new Document("_id", p.getUsuari_id())).first();
+            Usuaris u = new UsuarisDAO().fromDocument(doc_user);
+            p.setUsuari(u);
+            publicaciones.add(p);
+        }
+        return publicaciones;
+
+    }
+
 
     // Metodo para convertir el objecto que llega del MongoDB (llega como Document) a un objecto java de tipo Publicacions
     private Publicacions fromDocument(Document doc) {
